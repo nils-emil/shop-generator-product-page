@@ -1,0 +1,1 @@
+# shop-generator-product-page
