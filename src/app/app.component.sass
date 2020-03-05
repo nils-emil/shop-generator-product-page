@@ -1,17 +1,9 @@
-.header
-  position: relative
-  height: 100vh
-  width: 98vw
-
-.container
-  height: 200rem
 .header-text-block
   position: absolute
   text-align: center
   color: #FEF2E6
   z-index: 20
   font-size: 3rem
-  width: 35rem
 
 .header-text-block-1
   top: 220rem
@@ -32,6 +24,117 @@
   top: 15rem
   left: 15%
 
+@keyframes shooting-rocket
+  0%
+    top: 252rem
+    left: 25%
+  25%
+    transform: rotateZ(0deg)
+  35%
+    transform: rotateZ(10deg)
+  40%
+    left: 25%
+    transform: rotateZ(45deg)
+  50%
+    transform: rotateZ(30deg)
+  60%
+    left: 75%
+    transform: rotateZ(8deg)
+  70%
+    transform: rotateZ(0deg)
+  100%
+    left: 75%
+    top: -10rem
+
+//@media only screen and (max-width: 1000px)
+//  .header-text-block-1
+//    left: 25%
+//    font-size: 2.5rem
+//  .header-text-block-2
+//    left: 25%
+//    font-size: 1.5rem
+//  .header-text-block-3
+//    left: 25%
+//    font-size: 1.5rem
+//  .header-text-block-4
+//    left: 25%
+//    font-size: 1.5rem
+//  .myButton
+//    top: 0 !important
+//  @keyframes shooting-rocket
+//    0%
+//      top: 252rem
+//      left: 10%
+//    100%
+//      left: 10%
+//      top: -10rem
+
+.hills
+  position: absolute
+  width: 100%
+  height: 100%
+
+  top: 200rem
+  background-image: url("http://56k.studiovoila.com/static/footer/s3.png")
+  z-index: 10
+
+@media only screen and (max-width: 800px)
+  .header-text-block-1
+    left: 60%
+    font-size: 1.25rem
+  .header-text-block-2
+    left: 60%
+    font-size: 1.25rem
+  .header-text-block-3
+    left: 60%
+    font-size: 1.25rem
+  .header-text-block-4
+    left: 60%
+    font-size: 1.25rem
+  .myButton
+    top: 0 !important
+  .header-animation-div
+    margin-top: .25rem
+
+  .rocket
+    left: 10% !important
+  @keyframes shooting-rocket
+    0%
+      top: 252rem
+      left: 10%
+    100%
+      left: 10%
+      top: -10rem
+
+@media only screen and (max-width: 500px)
+  .header-text-block-1
+    left: 40%
+    font-size: 1.25rem
+  .header-text-block-2
+    left: 30%
+    font-size: .75rem
+  .header-text-block-3
+    left: 40%
+    font-size: 1rem
+  .header-text-block-4
+    left: 40%
+    font-size: 1rem
+  .myButton
+    top: 0 !important
+  .header-animation-div
+    margin-top: .25rem
+
+
+  .rocket
+    left: 10% !important
+  @keyframes shooting-rocket
+    0%
+      top: 252rem
+      left: 10%
+    100%
+      left: 10%
+      top: -10rem
+
 .header-text
   &-level-1
     position: relative
@@ -44,15 +147,6 @@
   &-level-3
     position: relative
     left: 3rem
-
-
-.hills
-  position: absolute
-  width: 100vw
-  height: 100vh
-  top: 200rem
-  background-image: url("http://56k.studiovoila.com/static/footer/s3.png")
-  z-index: 10
 
 .content-box
   background-image: url("http://56k.studiovoila.com/static/footer/s3.png")
@@ -129,7 +223,6 @@
 
 .frame
   position: absolute
-  width: 98vw
   height: 200rem
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.1)
   overflow: hidden
@@ -202,27 +295,6 @@
   .rocket-#{$i}
     animation: 18s shooting-rocket 2s linear infinite
 
-@keyframes shooting-rocket
-  0%
-    top: 252rem
-    left: 25%
-  25%
-    transform: rotateZ(0deg)
-  35%
-    transform: rotateZ(10deg)
-  40%
-    left: 25%
-    transform: rotateZ(45deg)
-  50%
-    transform: rotateZ(30deg)
-  60%
-    left: 75%
-    transform: rotateZ(8deg)
-  70%
-    transform: rotateZ(0deg)
-  100%
-    left: 75%
-    top: -10rem
 
 .rocket-rotator
   transform: rotate(-45deg)
@@ -256,3 +328,4 @@ h1
 .myButton:active
   position: relative
   top: 1px
+

@@ -1,91 +1,86 @@
 <div style="height: 200rem;">
-  <div class="container">
 
-    <div class="frame">
-      <div class="stage">
-        <div *ngFor="let number of [].constructor(300); let j = index" class="star" [ngClass]="['star-' + j]"></div>
-        <div *ngFor="let number of [].constructor(12); let j = index" class="shooting-star"
-             [ngClass]="['shooting-star-' + j]"></div>
-      </div>
+  <div class="frame">
+    <div class="stage">
+      <div *ngFor="let number of [].constructor(300); let j = index" class="star" [ngClass]="['star-' + j]"></div>
+      <div *ngFor="let number of [].constructor(12); let j = index" class="shooting-star"
+           [ngClass]="['shooting-star-' + j]"></div>
     </div>
-    <div class="hills">
-      <div style="position: relative; top: 100vh" id="scrollMe"></div>
-
-    </div>
-
-
-    <div class="rocket" *ngFor="let number of [].constructor(300); let j = index" [ngClass]="['rocket-' + j]">
-      <div class="rocket-rotator">
-        <img src="https://img.icons8.com/plasticine/100/000000/rocket.png">
-      </div>
-    </div>
-
-    <div class="header">
-      <div class="header-text-block header-text-block-1">
-        <h1 class="header-text header-text-level-1">
-          <div class="header-animation-div header-animation-div-1">F</div>
-          <div class="header-animation-div header-animation-div-2">o</div>
-          <div class="header-animation-div header-animation-div-3">l</div>
-          <div class="header-animation-div header-animation-div-4">l</div>
-          <div class="header-animation-div header-animation-div-5">o</div>
-          <div class="header-animation-div header-animation-div-6">w</div>
-        </h1>
-        <h1 class="header-text header-text-level-1">
-          <div class="header-animation-div header-animation-div-1">t</div>
-          <div class="header-animation-div header-animation-div-2">h</div>
-          <div class="header-animation-div header-animation-div-3">a</div>
-          <div class="header-animation-div header-animation-div-4">t</div>
-        </h1>
-        <h1 class="header-text header-text-level-1">
-          <div class="header-animation-div header-animation-div-1">r</div>
-          <div class="header-animation-div header-animation-div-2">o</div>
-          <div class="header-animation-div header-animation-div-3">c</div>
-          <div class="header-animation-div header-animation-div-3">k</div>
-          <div class="header-animation-div header-animation-div-3">e</div>
-          <div class="header-animation-div header-animation-div-3">t</div>
-        </h1>
-      </div>
-      <div class="header-text-block header-text-block-2">
-        <h1 class="header-text header-text-level-1">
-          <div class="header-animation-div header-animation-div-1">Create your</div>
-        </h1>
-        <h1 class="header-text header-text-level-1">
-          <div class="header-animation-div header-animation-div-1">own dream business</div>
-        </h1>
-        <h1 class="header-text header-text-level-1">
-          <div class="header-animation-div header-animation-div-1">in moments</div>
-          <br>
-          <a href="#" class="myButton">Register</a>
-        </h1>
-      </div>
-      <div class="header-text-block header-text-block-3">
-        <h1 class="header-text header-text-level-1">
-          <div class="header-animation-div header-animation-div-1">Get your</div>
-        </h1>
-        <h1 class="header-text header-text-level-1">
-          <div class="header-animation-div header-animation-div-1">very own</div>
-        </h1>
-        <h1 class="header-text header-text-level-1">
-          <div class="header-animation-div header-animation-div-1">domain</div>
-          <br>
-          <a href="#" class="myButton">Register</a>
-        </h1>
-      </div>
-      <div class="header-text-block header-text-block-4">
-        <h1 class="header-text header-text-level-1">
-          <div class="header-animation-div header-animation-div-1">Enjoy your</div>
-        </h1>
-        <h1 class="header-text header-text-level-1">
-          <div class="header-animation-div header-animation-div-1">financial</div>
-        </h1>
-        <h1 class="header-text header-text-level-1">
-          <div class="header-animation-div header-animation-div-1">freedom</div>
-          <br>
-          <a href="#" class="myButton">Register</a>
-        </h1>
-      </div>
-    </div>
-
-    <a href="https://icons8.com/icon/80607/launch">Launch icon by Icons8</a>
   </div>
+
+  <div class="hills">
+    <div style="position: relative; top: 100vh" id="scrollMe"></div>
+  </div>
+
+  <div class="rocket" *ngFor="let number of [].constructor(300); let j = index" [ngClass]="['rocket-' + j]">
+    <div class="rocket-rotator">
+      <img src="https://img.icons8.com/plasticine/100/000000/rocket.png">
+    </div>
+  </div>
+
+  <div class="header-text-block header-text-block-1">
+    <h1 class="header-text header-text-level-1">
+      <div class="header-animation-div header-animation-div-1">F</div>
+      <div class="header-animation-div header-animation-div-2">o</div>
+      <div class="header-animation-div header-animation-div-3">l</div>
+      <div class="header-animation-div header-animation-div-4">l</div>
+      <div class="header-animation-div header-animation-div-5">o</div>
+      <div class="header-animation-div header-animation-div-6">w</div>
+    </h1>
+    <h1 class="header-text header-text-level-1">
+      <div class="header-animation-div header-animation-div-1">t</div>
+      <div class="header-animation-div header-animation-div-2">h</div>
+      <div class="header-animation-div header-animation-div-3">a</div>
+      <div class="header-animation-div header-animation-div-4">t</div>
+    </h1>
+    <h1 class="header-text header-text-level-1">
+      <div class="header-animation-div header-animation-div-1">r</div>
+      <div class="header-animation-div header-animation-div-2">o</div>
+      <div class="header-animation-div header-animation-div-3">c</div>
+      <div class="header-animation-div header-animation-div-3">k</div>
+      <div class="header-animation-div header-animation-div-3">e</div>
+      <div class="header-animation-div header-animation-div-3">t</div>
+    </h1>
+  </div>
+  <div class="header-text-block header-text-block-2">
+    <h1 class="header-text header-text-level-1">
+      <div class="header-animation-div header-animation-div-1">Create your</div>
+    </h1>
+    <h1 class="header-text header-text-level-1">
+      <div class="header-animation-div header-animation-div-1">own dream business</div>
+    </h1>
+    <h1 class="header-text header-text-level-1">
+      <div class="header-animation-div header-animation-div-1">in moments</div>
+      <br>
+      <a href="#" class="myButton">Register</a>
+    </h1>
+  </div>
+  <div class="header-text-block header-text-block-3">
+    <h1 class="header-text header-text-level-1">
+      <div class="header-animation-div header-animation-div-1">Get your</div>
+    </h1>
+    <h1 class="header-text header-text-level-1">
+      <div class="header-animation-div header-animation-div-1">very own</div>
+    </h1>
+    <h1 class="header-text header-text-level-1">
+      <div class="header-animation-div header-animation-div-1">domain</div>
+      <br>
+      <a href="#" class="myButton">Register</a>
+    </h1>
+  </div>
+  <div class="header-text-block header-text-block-4">
+    <h1 class="header-text header-text-level-1">
+      <div class="header-animation-div header-animation-div-1">Enjoy your</div>
+    </h1>
+    <h1 class="header-text header-text-level-1">
+      <div class="header-animation-div header-animation-div-1">financial</div>
+    </h1>
+    <h1 class="header-text header-text-level-1">
+      <div class="header-animation-div header-animation-div-1">freedom</div>
+      <br>
+      <a href="#" class="myButton">Register</a>
+    </h1>
+  </div>
+
+  <a href="https://icons8.com/icon/80607/launch">Launch icon by Icons8</a>
 </div>
