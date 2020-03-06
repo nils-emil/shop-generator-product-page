@@ -13,11 +13,11 @@ export class AppComponent implements AfterContentInit  {
   ngAfterContentInit(): void {
     setTimeout(() => {
       this.scrollToBottom();
-    }, 250);
+    }, 500);
   }
 
   private scrollToBottom(): void {
-    var container = document.getElementById("scrollMe");
+    let container = document.getElementById("scrollMe");
     if (!this.scrollComplete) {
       this.scrollComplete = true;
       console.log(container);

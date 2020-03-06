@@ -46,36 +46,12 @@
     left: 75%
     top: -10rem
 
-//@media only screen and (max-width: 1000px)
-//  .header-text-block-1
-//    left: 25%
-//    font-size: 2.5rem
-//  .header-text-block-2
-//    left: 25%
-//    font-size: 1.5rem
-//  .header-text-block-3
-//    left: 25%
-//    font-size: 1.5rem
-//  .header-text-block-4
-//    left: 25%
-//    font-size: 1.5rem
-//  .myButton
-//    top: 0 !important
-//  @keyframes shooting-rocket
-//    0%
-//      top: 252rem
-//      left: 10%
-//    100%
-//      left: 10%
-//      top: -10rem
-
 .hills
-  position: absolute
+  position: relative
   width: 100%
-  height: 100%
-
-  top: 200rem
+  height: 65rem
   background-image: url("http://56k.studiovoila.com/static/footer/s3.png")
+  background-position: center
   z-index: 10
 
 @media only screen and (max-width: 800px)
@@ -95,8 +71,11 @@
     top: 0 !important
   .header-animation-div
     margin-top: .25rem
+  .hills
+    height: 50rem
 
   .rocket
+    top: 240rem !important
     left: 10% !important
   @keyframes shooting-rocket
     0%
@@ -188,6 +167,7 @@
 @for $i from 1 through 100
   .header-animation-div-#{$i}
     display: inline-block
+    animation-fill-mode: both
     animation-name: slideInFromLeft
     animation-delay: .5s
     animation-duration: 1 + $i  * 0.35s
@@ -236,8 +216,8 @@
 .stage
   position: fixed
   overflow: hidden
-  width: 100vw
-  height: 100vh
+  width: 200vw
+  height: 200vh
   background: #1d4253
   background-image: linear-gradient(-225deg, #16215C 0%, #281350 50%, #1B2871 100%)
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1d4253', endColorstr='#6bb5c4', GradientType=0)
@@ -321,6 +301,11 @@ h1
   padding: 16px 34px
   text-decoration: none
   text-shadow: 0px 1px 0px #283966
+  animation-fill-mode: both
+  animation-name: slideInFromLeft
+  animation-delay: .5s
+  animation-duration: 1s
+
 
 .myButton:hover
   background-color: #283966

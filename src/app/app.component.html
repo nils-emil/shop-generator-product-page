@@ -8,11 +8,7 @@
     </div>
   </div>
 
-  <div class="hills">
-    <div style="position: relative; top: 100vh" id="scrollMe"></div>
-  </div>
-
-  <div class="rocket" *ngFor="let number of [].constructor(300); let j = index" [ngClass]="['rocket-' + j]">
+  <div id="scrollMe" class="rocket" *ngFor="let number of [].constructor(2); let j = index" [ngClass]="['rocket-' + j]">
     <div class="rocket-rotator">
       <img src="https://img.icons8.com/plasticine/100/000000/rocket.png">
     </div>
@@ -83,4 +79,8 @@
   </div>
 
   <a href="https://icons8.com/icon/80607/launch">Launch icon by Icons8</a>
+</div>
+<div style="position: relative">
+  <div class="hills" >
+  </div>
 </div>
